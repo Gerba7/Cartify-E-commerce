@@ -1,0 +1,110 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 45vh;
+    box-shadow: 24;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    color: var(--bgBrand);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: flex-end;
+}
+
+.input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid var(--bgBright);
+    padding: 0 10px;
+    font-family: inherit;
+    color: var(--text);
+    outline: none !important;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: var(--bg);
+}
+
+.input:focus {
+    border-bottom: 2px solid var(--bgBrand);
+}
+
+.addButton {
+    border: none;
+    background-color: var(--bgBrand);
+    color: var(--textBright);
+    padding: 4px 16px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: var(--bgBright);
+    color: var(--bgBrand);
+}
+
+.categoryContainer {
+    background-color: var(--bg);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+.category {
+    background-color: var(--bgBright);
+    color: var(--bgBrand);
+    padding: 4px 8px;
+    border-radius: 25px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-shadow: var(--shadow);
+}
+
+.categoryTitle {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.deleteButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bgBrand);
+}
+
+.deleteButton:hover {
+    color: crimson;
+}

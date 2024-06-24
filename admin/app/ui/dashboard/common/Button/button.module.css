@@ -1,0 +1,40 @@
+.button {
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    color: var(--bgGray);
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.delete {
+    background-color: rgba(220, 20, 60, 0.336);
+    color: crimson;
+}
+
+.delete:hover {
+    background-color: crimson;
+    color: var(--bgGray);
+}
+
+.edit {
+    background-color: #3f51b529;
+    color: #3f51b5;
+}
+
+.edit:hover {
+    background-color: #3f51b5;
+    color: var(--bgGray);
+}
+
+.apply {
+    background-color: var(--bgBright);
+    color: var(--bgBrand);
+}
+
+.apply:hover {
+    background-color: var(--bgBrand);
+    color:  var(--bgGray);
+}

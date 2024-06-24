@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 7vh 38vw;
+  gap: 5vh;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  height: 40px;
+  border: 1px solid var(--textDark);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.formButton {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bgBrand);
+  padding: 2vh 0;
+  color: var(--textBright);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.others {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.hr {
+  flex: 1;
+  height: 1px;
+  color: lightgray;
+}
+
+.socialsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vh 0;
+}
+
+.socialButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  border: 1px solid var(--bgBrand);
+}

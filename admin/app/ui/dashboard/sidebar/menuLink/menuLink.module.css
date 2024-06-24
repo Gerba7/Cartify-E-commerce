@@ -1,0 +1,51 @@
+.container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin: 5px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 2vh 2vw;
+    position: relative;
+    font-weight: 700;
+    color: var(--bgGray);
+}
+
+.container:hover, .active {
+    background-color: var(--bgGray);
+    border: 1px solid var(--bgBrand);
+    border-radius: 50px 0px 0px 50px;
+    color: var(--bgBrand);
+}
+
+.container:hover::before, .active::before {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 25px 0 10px var(--bgGray);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.container:hover::after, .active::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    bottom: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px -25px 0 10px var(--bgGray);
+    pointer-events: none;
+    overflow: hidden;
+}
+

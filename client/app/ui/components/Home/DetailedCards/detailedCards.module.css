@@ -1,0 +1,320 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vh;
+    padding: 0vh 10vw;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 4;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.left {
+    left: 0;
+    transform: translate(-50%, 25%);
+}
+
+.right {
+    right: 0;
+    transform: translate(50%, 25%);
+}
+
+.headers {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.topTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-25% * 8));
+        transform: translateX(calc(-25% * 8));
+    }
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.row::before,
+.row::after {
+    background: linear-gradient(to right, rgb(25, 28, 28, 1) 0%, rgb(25, 28, 28, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 11%;
+    z-index: 2;
+}
+
+.row::before {
+    left: 0;
+    top: 0;
+}
+
+.row::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.rowSlider {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: scroll 40s linear infinite;
+}
+
+.row:hover .rowSlider {
+    animation-play-state: paused;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    max-width: 25%;
+    height: 100%;
+    display: flex;
+    transform: translate(-100%);
+    transition: ease 1000ms;
+    will-change: transform;
+    padding: 8px;
+}
+
+.card:hover {
+    scale: 1.04;
+    z-index: 3;
+    transition: scale ease .2s;
+    will-change: scale;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1vh;
+    box-shadow: 0px 2px 8px 0px rgba(0, 150, 135, 0.205);
+    border-radius: 10px;
+    background: rgba(0, 150, 136, 0.23);
+    border-radius: 8px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(0, 150, 136, 0.24);
+}
+
+.background {
+    flex: 4;
+    display: flex;
+    width: 100%;
+    max-height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.backgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;  /* 8px */
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.description {
+    color: var(--textDark);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5vw;
+    font-size: 12px;
+    color: var(--textDark);
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgBrand);
+    min-height: 25px;
+    min-width: 25px;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--textBright);
+    border-radius: 5px 0px 5px 0px;
+    font-weight: 500;
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    gap: 4px;
+}
+
+.mileageIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.badge {    
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+
+.green {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 150, 136, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0px 2px 8px 0px rgba(0, 150, 136, 0.3);
+}
+
+.blue {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(3, 169, 244, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(3, 169, 244, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(3, 169, 244, 0.3);
+}
+
+.yellow {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 152, 0, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 152, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(255, 152, 0, 0.3);
+}
+
+.red {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(233, 30, 99, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(233, 30, 99, .5);
+    box-shadow: 0px 0px 8px 0px rgba(233, 30, 99, 0.3);
+}
+
+.prices {
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+.justifyCenter {
+    justify-content: space-between;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.discBadge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgBrand);  /* #FBBF24 */
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 12px;
+}

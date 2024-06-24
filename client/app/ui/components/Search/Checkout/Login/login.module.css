@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    border: 1px solid var(--bgBrand);
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    z-index: 2;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.title {
+    align-self: flex-start;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  width: 70%;
+}
+
+.width {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  height: 40px;
+  border: 1px solid var(--textDark);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.input:focus,
+.input:active {
+    outline: none;
+    outline-color: var(--bgBrand);
+    border: 3px solid var(--bgBrand);
+}
+
+.error {
+  font-size: 12px;
+  color: crimson;
+  font-weight: 700;
+}
+
+.formButton {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bgBrand);
+  padding: 16px 0;
+  color: var(--textBright);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  will-change: box-shadow;
+}
+
+.formButton:hover {
+  box-shadow: 0px 0px 16px 2px #00968758;
+}
+
+.buttonColor {
+    background-color: var(--textBright);
+    border: 1px solid var(--bgBrand);
+}
+
+.others {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hr {
+  flex: 1;
+  height: 1px;
+  color: lightgray;
+}
+
+.socialsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+.socialButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, border 0.3s;
+  will-change: box-shadow, border;
+}
+
+.socialButton:hover {
+  border: 1px solid var(--bgBrand);
+  box-shadow: 0px 0px 16px 2px #00968758;
+}

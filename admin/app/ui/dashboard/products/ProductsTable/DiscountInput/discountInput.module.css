@@ -1,0 +1,58 @@
+.discountBadge {
+    background-color: #209e9126;
+    color: #209e91;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.discountInput {
+    height: 28px;
+    border-radius: 5px;
+    border: 2px solid var(--bgBright);
+    padding: 0 12px;
+    background-color: var(--bg);
+    font-family: inherit;
+    color: var(--text);
+    outline: none !important;
+    font-size: 12px;
+    width: 55px;
+    text-transform: capitalize;
+    margin-right: 4px;
+}
+
+.discountInput:focus {
+    border: 2px solid var(--bgBrand)
+}
+
+.button {
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    color: var(--bgGray);
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.apply {
+    background-color: var(--bgBright);
+    color: var(--bgBrand);
+}
+
+.apply:hover {
+    background-color: var(--bgBrand);
+    color:  var(--bgGray);
+}
+
+.cancel {
+    background-color: rgba(220, 20, 60, 0.336);
+    color: crimson;
+}
+
+.cancel:hover {
+    background-color: crimson;
+    color: var(--bgGray);
+}

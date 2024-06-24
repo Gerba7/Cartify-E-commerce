@@ -1,0 +1,78 @@
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0; /* Start position off-screen to the right */
+    }
+    100% {
+        background-position: -200% 0; /* End position off-screen to the left */
+    }
+}
+
+.container {
+    background-color: var(--bg);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header {
+    padding: var(--padding);
+    height: 64px;
+}
+
+.headers {
+    font-weight: 700;
+    padding: var(--padding);
+    font-size: 14px;
+}
+
+.table td{
+    padding: 8px 16px;
+}
+
+.bodyRow {
+    border-top: 1px solid rgb(225, 224, 224);
+    font-size: 12px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userImage{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(90deg, #e2e2e2, #f0f0f0, #e2e2e2); /* Adjust gradient colors */
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+}
+
+.data {
+    width: 50%;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e2e2e2, #f0f0f0, #e2e2e2); /* Adjust gradient colors */
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--textBright);
+    border: none;
+    cursor: pointer;
+}

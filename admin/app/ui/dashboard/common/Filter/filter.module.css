@@ -1,0 +1,60 @@
+.container {
+    border: 1px solid var(--bgBright);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 50px;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.selectedContainer {
+    background-color: var(--bgBright);
+    border: 1px solid var(--bgBrand);
+}
+
+.container:hover {
+    border: 1px solid var(--bgBrand);
+}
+
+.icon {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectedColor {
+    color: var(--bgBrand);
+}
+
+.filterTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filtersContainer {
+    position: absolute;
+    background-color: var(--bg);
+    box-shadow: var(--shadow);
+    top: 48px;
+    left: 0;
+    border-radius: 10px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter {
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.filter:hover {
+    background-color: var(--bgBright);
+}

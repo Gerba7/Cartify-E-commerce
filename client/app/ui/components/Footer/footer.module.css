@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    background-color: var(--bg);
+    padding: 10vh 10vw;
+    color: var(--textBright);
+    width: 100vw;
+    background-color: #000;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--text);
+    display: flex;
+    flex-direction: row;
+}
+
+.imgContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contactTitle {
+    font-size: 24px;
+}
+
+.iconsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.marginLeft {
+    margin-left: 15px;
+}
+
+.iconText {
+    line-height: 25px;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.socialIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 15px;
+    color: #fff;
+    /* background-color: #55504d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color .5s ease;
+    will-change: color;
+}
+
+.whatsapp:hover {
+    color: #25D366; 
+}
+
+.facebook:hover {
+    color: #3B5999;
+}
+
+.instagram:hover {
+    color: #E4405F;
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+}
+
+.youtube:hover {
+    color: #c4302b;
+}
+
+.x:hover {
+    color: #c4c4c4;
+}
+
+.right {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    padding: 0 64px;
+    gap: 32px;
+    justify-content: space-around;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bgBrand);
+    margin-bottom: 8px;
+}
+
+.link {
+    font-size: 14px;
+    text-decoration: underline;
+    transition: color .5s ease;
+    will-change: color;
+}
+
+.link:hover {
+    color: var(--bgBrand);
+}
+
+
+@media (max-width: 600px) {
+
+    .left {
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .iconsContainer {
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-height: 700px) and (min-width: 1000px) {
+
+    .container {
+        padding: 20vh 5vw;
+    }
+
+}

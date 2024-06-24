@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.button {
+    padding: 8px 16px;
+    width: max-content;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bgBrand);
+}

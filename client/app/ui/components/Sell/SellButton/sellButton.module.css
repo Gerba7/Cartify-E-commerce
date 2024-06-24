@@ -1,0 +1,18 @@
+.button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--bgBrand);
+    border: 1px solid transparent;
+    color: var(--textBright);
+    font-weight: 600;
+    font-size: 16px;
+    max-width: max-content;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.button:hover {
+    background-color: var(--bgHover);
+    border: 1px solid var(--bgBrand);
+    color: var(--bgBrand);
+}

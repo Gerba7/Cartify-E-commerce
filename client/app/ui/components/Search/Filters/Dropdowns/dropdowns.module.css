@@ -1,0 +1,76 @@
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.pressable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    will-change: transform;
+}
+
+.hiddenContainer {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: inset 0px 0px 16px 0px #00968731;
+    padding: 16px;
+    will-change: display;
+}
+
+.visible {
+    display: flex;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.label {
+    text-transform: capitalize;
+}
+
+.button {
+    width: max-content;
+    border-radius: 10px;
+    border: 1px solid var(--bgBrand);
+    background-color: var(--bgBrand);
+    padding: 8px;
+    align-self: flex-end;
+    font-size: 12px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    will-change: box-shadow;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 16px 2px #00968758;
+    will-change: box-shadow;
+}

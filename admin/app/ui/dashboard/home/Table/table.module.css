@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.table {
+
+    width: 100%;
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.date {
+    font-weight: 300;
+}
+
+.paymentMethod {
+    width: 4vw;
+    height: 3vh;
+    object-fit: contain;
+    background-color: var(--bg);
+    background: var(--bg);
+}
+
+.plus {
+    position: absolute;
+    left: -10px;
+    font-weight: 700;
+    color: #209e91;
+}
+
+.paidPrice {
+    font-weight: 700;
+    color: #209e91;
+}
+
+.status {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.pending {
+    background-color: #f9a82525;
+    color: #f9a825;
+}
+
+.paid {
+    background-color: #209e9126;
+    color: #209e91;
+}
+
+.canceled {
+    background-color: rgba(220, 20, 60, 0.158);
+    color: crimson;
+}

@@ -1,0 +1,37 @@
+.container{
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.button{
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--bgBrand);
+  width: 36px;
+  height: 36px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  will-change: background-color, color, box-shadow;
+}
+
+.buttonActive {
+  background-color: var(--bgBrand);
+  pointer-events: none;
+}
+
+.button:disabled{
+  cursor: not-allowed;
+  border: 1px solid #00968758;
+  pointer-events: none;
+}
+
+.button:hover{
+  background-color: var(--bgBright);
+  color: var(--bgDark);
+  box-shadow: 0px 0px 16px 2px #00968758;
+}

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+}

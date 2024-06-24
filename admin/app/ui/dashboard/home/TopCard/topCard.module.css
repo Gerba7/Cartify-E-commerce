@@ -1,0 +1,50 @@
+.card {
+    flex: 1;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    justify-content: space-between;
+}
+
+.icon {
+    border: 2px solid var(--textBright);
+    color: var(--textBright);
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.description {
+    color: var(--bgGray);
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.number {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    gap: .5vw;
+    justify-content: flex-end;
+}
+
+.percentage {
+    font-size: 12px;
+}
+
+.name {
+    font-size: 12px;
+}

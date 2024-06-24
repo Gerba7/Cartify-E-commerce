@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.formButton {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bgBrand);
+  padding: 16px 0;
+  color: var(--textBright);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  will-change: box-shadow;
+}
+
+.formButton:hover {
+  box-shadow: 0px 0px 16px 2px #00968758;
+}
+
+.buttonColor {
+    background-color: var(--textBright);
+    border: 1px solid var(--bgBrand);
+}

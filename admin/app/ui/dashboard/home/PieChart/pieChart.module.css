@@ -1,0 +1,9 @@
+.container {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: var(--bg);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

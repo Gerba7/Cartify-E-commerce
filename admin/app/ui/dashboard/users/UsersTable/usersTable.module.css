@@ -1,0 +1,55 @@
+.container {
+    background-color: var(--bg);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header {
+    padding: var(--padding);
+    height: 64px;
+}
+
+.headers {
+    font-weight: 700;
+    padding: var(--padding);
+    font-size: 14px;
+}
+
+.table td{
+    padding: 8px 16px;
+}
+
+.bodyRow {
+    border-top: 1px solid rgb(225, 224, 224);
+    font-size: 12px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.userImage{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--textBright);
+    border: none;
+    cursor: pointer;
+}

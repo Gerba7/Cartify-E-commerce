@@ -1,0 +1,29 @@
+.link {
+    width: max-content;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #191C1C;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    color: var(--textBright);
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}

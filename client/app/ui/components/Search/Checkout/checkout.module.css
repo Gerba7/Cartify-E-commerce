@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 15vh 15vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+
+.leftCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.rightCol {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+

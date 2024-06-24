@@ -1,0 +1,214 @@
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0; /* Start position off-screen to the right */
+    }
+    100% {
+        background-position: -200% 0; /* End position off-screen to the left */
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    transition: ease 1000ms;
+    padding: 8px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1vh;
+    box-shadow: 0px 2px 8px 0px rgba(0, 150, 135, 0.205);
+    border-radius: 10px;
+    background: rgb(0,150,136);
+    background: linear-gradient(90deg, rgba(0,150,136,0.2951680672268907) 0%, rgba(0,150,136,0.49684873949579833) 50%, rgba(0,150,136,0.2979691876750701) 100%);
+    border-radius: 8px;
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(0, 150, 136, 0.24);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.background {
+    flex: 4;
+    display: flex;
+    width: 100%;
+    max-height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.backgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: rgb(35,42,52);
+    background: linear-gradient(90deg, rgba(35,42,52,0.30077030812324934) 0%, rgba(35,42,52,0.49684873949579833) 50%, rgba(35,42,52,0.2979691876750701) 100%);
+    border-radius: 10px 10px 0px 0px;
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.description {
+    color: var(--textDark);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5vw;
+    font-size: 12px;
+    color: var(--textDark);
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgBrand);
+    min-height: 25px;
+    min-width: 42px;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--textBright);
+    border-radius: 5px 0px 5px 0px;
+    font-weight: 500;
+}
+
+.comments {
+    font-size: 12px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.badge {    
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 50px;
+    width: 64px;
+    height: 24px;
+}
+
+.green {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgb(0,150,136);
+    background: linear-gradient(90deg, rgba(0,150,136,0.30077030812324934) 0%, rgba(0,150,136,0.49684873949579833) 50%, rgba(0,150,136,0.2951680672268907) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0px 2px 8px 0px rgba(0, 150, 136, 0.3);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.blue {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgb(3,169,244);
+    background: linear-gradient(90deg, rgba(3,169,244,0.2979691876750701) 0%, rgba(3,169,244,0.4996498599439776) 50%, rgba(3,169,244,0.2951680672268907) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0px 2px 8px 0px rgba(3, 169, 244, 0.3);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.yellow {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgb(255,152,0);
+    background: linear-gradient(90deg, rgba(255,152,0,0.2951680672268907) 0%, rgba(255,152,0,0.4996498599439776) 50%, rgba(255,152,0,0.30077030812324934) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0px 2px 8px 0px rgba(255, 152, 0, 0.3);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.red {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgb(233,30,99);
+    background: linear-gradient(90deg, rgba(233,30,99,0.2951680672268907) 0%, rgba(233,30,99,0.49684873949579833) 50%, rgba(233,30,99,0.30077030812324934) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0px 2px 8px 0px rgba(233, 30, 99, 0.3);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}
+
+.prices {
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.2vw;
+    height: 24px;
+}
+
+.dataContainer {
+    width: 50%;
+    height: 24px;
+    border-radius: 10px;
+    background: rgb(35,42,52);
+    background: linear-gradient(90deg, rgba(35,42,52,0.30077030812324934) 0%, rgba(35,42,52,0.49684873949579833) 50%, rgba(35,42,52,0.2979691876750701) 100%);
+    background-size: 200% 100%; /* Double the size to create overflow */
+    animation: shimmer 2.5s infinite linear; /* Apply shimmer animation */
+    will-change: background-position;
+}

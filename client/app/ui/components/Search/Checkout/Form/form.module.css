@@ -1,0 +1,145 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container {
+    width: 100%;
+    border: 1px solid var(--bgBrand);
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.info {
+    padding: 15px 10px;
+    background-color: var(--bgHoverOpaque);
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    border-radius: 10px;
+    border: 1px solid var(--bgBrand);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5vh;
+}
+/* 
+.label {
+    font-weight: bold;
+    font-size: 14px;
+} */
+
+.input {
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid var(--textDark);
+    padding: 0 10px;
+}
+
+.input:focus,
+.input:active {
+    outline: none;
+    outline-color: var(--bgBrand);
+    border: 3px solid var(--bgBrand);
+}
+
+.hr {
+    border: 1px solid var(--bgBrand);
+    border-bottom: none;
+    margin: 5px 0px;
+}
+
+.paymentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.paymentMethod {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.paymentInputCont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.paymentInput {
+    display: none; 
+}
+
+.paymentInput + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 28px; 
+}
+
+.paymentInput + label::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--bgBrand);
+    border-radius: 50%; 
+    position: absolute;
+    left: 60%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    background-color: var(--bgBrandBright);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.paymentInput:checked + label::before {
+    background-color: var(--bgBrand);
+    box-shadow: 0px 0px 16px 2px #00968758;
+}
+
+.paymentInput + label img {
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.paymentInput:checked + label img {
+    transform: scale(1.1); 
+}
+
+.button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--bgBrand);
+    border: 1px solid transparent;
+    color: var(--textBright);
+    font-weight: 600;
+    font-size: 16px;
+    max-width: max-content;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.button:hover {
+    background-color: var(--bgHover);
+    border: 1px solid var(--bgBrand);
+    color: var(--bgBrand);
+}
+

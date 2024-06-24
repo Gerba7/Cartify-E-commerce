@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0vh 10vw;
+    margin: 10vh 0;
+    background-color: var(--bgBrand);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-100px * 17));
+        transform: translateX(calc(-100px * 17));
+    }
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+.row::before,
+.row::after {
+    background: linear-gradient(to right, rgb(0, 150, 136, 1) 0%, rgb(0, 150, 136, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 11%;
+    z-index: 2;
+}
+
+.row::before {
+    left: 0;
+    top: 0;
+}
+
+.row::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.rowSlider {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    animation: scroll 40s linear infinite;
+    animation-direction: reverse;
+}
+
+.row:hover .rowSlider {
+    animation-play-state: paused;
+}
+
+.logo {
+    flex-shrink: 0;
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    padding: 2vh;
+    transition: padding ease .2s;
+    will-change: padding;
+}
+
+.logo:hover {
+    padding: 1vh;
+}
+

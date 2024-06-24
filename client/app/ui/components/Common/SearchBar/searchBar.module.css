@@ -1,0 +1,91 @@
+.homeContainer {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 150, 135, 0.205);
+    background: rgba(0, 150, 136, 0.23);
+    border-radius: 50px;
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(0, 150, 136, 0.24);
+    padding: 4px;
+}
+
+.searchContainer {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.input {
+    flex: 1;
+    border-radius: 50px 8px 8px 50px;
+    border: none;
+    width: 100%;
+    padding: 0px 24px;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 16px;
+    background-color: var(--bg);
+}
+
+.input:focus,
+.input:active {
+    outline: none;
+    outline-color: var(--bgBrand);
+    border: 3px solid var(--bgBrand);
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: var(--textDark);
+}
+
+.requiredField {
+    position: absolute;
+    background-color: crimson;
+    color: var(--textBright);
+    top: -50px;
+    left: 10%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.requiredField::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    bottom: -7px;
+    left: 80px;
+    background: linear-gradient(45deg, transparent 0%, transparent 50%, crimson 50%, crimson 100%);
+}
+
+.button {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    border-radius: 8px 50px 50px 8px;
+    border: none;
+    background-color: var(--bgBright);
+    color: var(--textBright);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    will-change: background-color, box-shadow, color;
+}
+
+.button:hover {
+    background-color: var(--bgBrand);
+    color: var(--bgDark);
+}
+

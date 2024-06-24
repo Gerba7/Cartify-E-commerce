@@ -1,0 +1,48 @@
+.container {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: var(--padding);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 24px 0px 24px 20px;
+}
+
+.logoutContainer {
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout {
+    width: max-content;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--bgBrand);
+}
+
+.logout:hover {
+    background-color: #b0bec5;
+}

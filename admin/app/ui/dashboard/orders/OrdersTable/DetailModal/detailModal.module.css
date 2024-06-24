@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 45vh;
+    box-shadow: 24;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    color: var(--bgBrand);
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.detailContainer {
+    background-color: var(--bg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+.detailContainer::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.detailContainer::-webkit-scrollbar-track {
+    background: var(--bgHoverOpaque); 
+    border-radius: 10px;
+}
+
+.detailContainer::-webkit-scrollbar-thumb {
+    background-color: var(--bgBright); 
+    border-radius: 10px;
+}
+
+.detailContainer::-webkit-scrollbar-thumb:hover {
+    background: var(--bgBrand); 
+}
+
+.item {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.li {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.productContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.product {
+    font-size: 12px;
+}

@@ -1,0 +1,22 @@
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--bgBrand);
+  }
+  
+  .button:disabled{
+    cursor: not-allowed;
+    border: 1px solid var(--bgBright);
+  }
+
+  .button:hover{
+    background-color: var(--bgBright);
+    color: var(--bgDark);
+  }

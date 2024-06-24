@@ -1,0 +1,35 @@
+.info {
+    padding: 15px 10px;
+    background-color: var(--bgHoverOpaque);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+    border-radius: 10px;
+    border: 1px solid var(--bgBrand);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bgBrand);
+    font-size: 24px;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4px;
+}
+
+.link {
+    color: var(--bgBrand);
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
